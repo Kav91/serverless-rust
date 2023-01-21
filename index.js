@@ -264,6 +264,8 @@ class RustPlugin {
     try {
       if (fs.existsSync(dockerCLI)) {
         this.serverless.cli.log(`found ${dockerCLI}`);
+      }else{
+        this.serverless.cli.log(`not found ${dockerCLI}`);
       }
     } catch(err) {
       this.serverless.cli.log(`${err} ${dockerCLI}`);
