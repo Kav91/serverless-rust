@@ -5,6 +5,7 @@
 // https://github.com/softprops/lambda-rust/
 
 const { spawnSync } = require("child_process");
+const fs = require('fs')
 const { homedir, platform } = require("os");
 const path = require("path");
 const AdmZip = require("adm-zip");
